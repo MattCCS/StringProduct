@@ -2,14 +2,14 @@
 Brute-forces the solution for the String-Product Problem.
 
 Tactics:
-- check whether length would even be longer first (O(c) vs O(n))
 - memoize all lettersets on load
 - discard shorter words with equivalent lettersets
+- check whether length would even be longer first (O(c) vs O(n))
 """
 
 import itertools
-import time
 import sys
+import time
 
 
 def filter_by_lettersets(words):
